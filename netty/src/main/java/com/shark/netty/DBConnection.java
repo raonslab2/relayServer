@@ -15,7 +15,7 @@ public class DBConnection {
 	 private static String PASS;
 	 
 	 private Connection conn;
-	 private Statement stmt;
+	 private Statement stmt; 
  
 	 DBConnection() {
 		 try { 
