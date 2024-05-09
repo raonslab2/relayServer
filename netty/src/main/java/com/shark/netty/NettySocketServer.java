@@ -25,7 +25,7 @@ public class NettySocketServer implements Runnable {
         this.conn = conn; 
         this.pool = pool; 
         this.stmt = stmt; 
-        this.port = port; 
+        this.port = port;
     } 
     
     
