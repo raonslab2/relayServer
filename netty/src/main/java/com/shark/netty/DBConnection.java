@@ -19,7 +19,7 @@ public class DBConnection {
  
 	 DBConnection() {
 		 try { 
-			DB_URL = "jdbc:mariadb://127.0.0.1:3306/drone_db?serverTimezone=Asia/Seoul";
+			DB_URL = "jdbc:mariadb://192.168.0.23:3306/drone_db?serverTimezone=Asia/Seoul";
 			USER = "mrdev";
 			PASS = "mrdev1"; 
 		    Class.forName(JDBC_DRIVER);

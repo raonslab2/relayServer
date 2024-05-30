@@ -244,6 +244,7 @@ public class DBConnectionPool {
 		 		+ "			ON b.st_pk = ( select MAX(st_pk) from br_drone_state WHERE dl_id =  a.ai_devicename  ) \r\n"
 		 		+ "		WHERE a.ai_use = 'Y' ";
 		 try {
+ 
 			rs = stmt.executeQuery(sql);
 			return rs;
 		} catch (SQLException e) {

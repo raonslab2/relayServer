@@ -57,7 +57,7 @@ import net.sf.json.JSONObject;
  * as this is the default.
  */
 public final class WebCall implements Runnable{ 
-    static final String URL = System.getProperty("url", "ws://127.0.0.1:5010/websocket");
+    static final String URL = System.getProperty("url", "ws://192.168.0.23:5010/websocket");
     
 	private Connection conn;
 	private DBConnectionPool pool;
@@ -246,13 +246,13 @@ public final class WebCall implements Runnable{
         	websocketUrl = System.getProperty("url", "ws://"+args[0]+":5010/websocket");
             port = Integer.parseInt(args[1]);
         } else {
-        	websocketUrl = System.getProperty("url", "ws://127.0.0.1:5010/websocket");
+        	websocketUrl = System.getProperty("url", "ws://192.168.0.23:5010/websocket");
             port = 5010;
         }
         
 		Connection conn = null;
 		DBConnectionPool pool = new DBConnectionPool(
-				"jdbc:mariadb://127.0.0.1:3306/sepm_db?serverTimezone=Asia/Seoul",
+				"jdbc:mariadb://192.168.0.23:3306/sepm_db?serverTimezone=Asia/Seoul",
 				"mrdev", "mrdev1", 2);
 		Statement stmt = null;
 		try {
